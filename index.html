@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeds Generator</title>
+    <script src="/myScripts/ui.js" defer></script>
+    <script src="/myScripts/feeds.js" defer></script>
+    <script src="/myScripts/app.js" defer></script>
+    <link rel="stylesheet" href="/myStyles/home.css">
+    <link rel="stylesheet" href="/myStyles/headFoot.css">
+    <link rel="stylesheet" href="/myStyles/feeds.css">
+    <link rel="stylesheet" href="/myStyles/cardStyle.css">
+    <link rel="stylesheet" href="/myStyles/cardTheme.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="/myImg/logo.png" alt="websitelogo" class="logo">
+            <a href='/index.html' class="site-name">Leaf<span>ed</span></a>
+        </div>
+        <nav class="basic-nav">
+            <ul>
+                <li class="nav-item notSearch">
+                    <img src="/myImg/feeds.png" alt="feeds">
+                </li>
+                <li class="nav-item notSearch">
+                    <img src="myImg/profile.png" alt="profile">
+                </li>
+                <li class="nav-item notSearch">
+                    <img src="/myImg/settings.png" alt="settings">
+                </li>
+                <li class="nav-item search">
+                    <input type="text"><img src="/myImg/search.png" alt="">
+                    <a href="/index.html"><img src="search.png" alt="" class="nav-img"></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="smol-nav">
+            <a href="#a-nav" class="ham" id="ham1" data-hamnumber="1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </nav>
+    </header>
+    <aside id="a-nav">
+        <a href="#" class="ham" id="ham2" data-hamnumber="2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul>
+            <li class="nav-item search">
+                <input type="text"><img src="/myImg/search.png" alt="">
+                <a href="/index.html"><img src="search.png" alt="" class="nav-img"></a>
+            </li>
+            <li class="nav-item notSearch">
+                <img src="/myImg/feeds.png" alt="feeds">
+                <p>Feeds</p>
+            </li>
+            <li class="nav-item notSearch">
+                <img src="myImg/profile.png" alt="profile">
+                <p>Profile</p>
+            </li>
+            <li class="nav-item notSearch">
+                <img src="/myImg/settings.png" alt="settings">
+                <p>Settings</p>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <section id="feed-section">
+            <h2>Top Feeds</h2>
+            <ul id="feed-wrapper">
+                <!-- *****Template Html*****
+                     <li class="feed-item">
+                    <article>
+                        <div class="feed-text">
+                            <p></p>
+                        </div>
+                        <div class="feed-title">
+                            <h3></h3>
+                        </div>
+                    </article>
+                </li>
+            -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="/myImg/logo.png" alt="" class="logo">
+            <p class="site-name">Leaf<span>ed</span></p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Feeds</a>
+                </li>
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <img src="/myImg/email.png" alt="">
+                    <a href="">Email</a>
+                </li>
+                <li>
+                    <img src="/myImg/linkedin.png" alt="">
+                    <a href="">Linkedin</a>
+                </li>
+                <li>
+                    <img src="/myImg/twitter.png" alt="">
+                    <a href="">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

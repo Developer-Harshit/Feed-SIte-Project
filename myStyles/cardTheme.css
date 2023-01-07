@@ -1,0 +1,164 @@
+/* :root {
+     #blue
+    #green
+    #red
+    #yellow 
+    --color-red1: rgb(234, 95, 116);
+    --color-red2: rgba(239, 105, 118, 0.8);
+    --color-blue1: rgb(110, 92, 229);
+    --color-blue2: rgba(145, 128, 255, 0.8);
+    --color-green1: rgb(85, 227, 161);
+    --color-green2: rgba(102, 241, 200, 0.8);
+    --color-violet1: rgb(213, 85, 227);
+    --color-violet2: rgba(244, 110, 235, 0.8);
+    --color-yellow1: rgb(233, 214, 93);
+    --color-yellow2: rgba(247, 215, 111, 0.8);
+} 
+*/
+
+:root {
+    /* #blue
+    #green
+    #red
+    #yellow */
+    --color-red1: rgb(234, 202, 95);
+    --color-red2: rgba(239, 192, 105, 0.8);
+    --color-blue1: rgb(227, 229, 92);
+    --color-blue2: rgba(255, 249, 128, 0.8);
+    --color-green1: rgb(139, 227, 85);
+    --color-green2: rgba(153, 241, 102, 0.8);
+    --color-violet1: rgb(85, 227, 125);
+    --color-violet2: rgba(110, 244, 128, 0.8);
+    --color-yellow1: rgb(93, 233, 175);
+    --color-yellow2: rgba(111, 247, 206, 0.8);
+}
+
+.blue {
+    background-color: var(--color-blue2);
+    border-top: 2px solid var(--color-blue1);
+    box-shadow: 0px 0px 15px var(--color-blue1);
+}
+
+.blue .feed-text {
+    color: var(--color-blue1);
+}
+
+.blue .feed-title {
+    box-shadow: 0px 0px 5px var(--color-blue1);
+}
+
+.blue:hover {
+    background-color: var(--color-blue1);
+}
+
+.blue:hover article .feed-text {
+    background-color: var(--color-blue1);
+}
+
+.blue:hover article .feed-title {
+    color: var(--color-blue1)
+}
+
+.red {
+    background-color: var(--color-red2);
+    border-top: 2px solid var(--color-red1);
+    box-shadow: 0px 0px 15px var(--color-red1);
+}
+
+.red .feed-text {
+    color: var(--color-red1);
+}
+
+.red .feed-title {
+    box-shadow: 0px 0px 5px var(--color-red1);
+}
+
+.red:hover {
+    background-color: var(--color-red1);
+}
+
+.red:hover article .feed-text {
+    background-color: var(--color-red1);
+}
+
+.red:hover article .feed-title {
+    color: var(--color-red1)
+}
+
+.green {
+    background-color: var(--color-green2);
+    border-top: 2px solid var(--color-green1);
+    box-shadow: 0px 0px 15px var(--color-green1);
+}
+
+.green .feed-text {
+    color: var(--color-green1);
+}
+
+.green .feed-title {
+    box-shadow: 0px 0px 5px var(--color-green1);
+}
+
+.green:hover {
+    background-color: var(--color-green1);
+}
+
+.green:hover article .feed-text {
+    background-color: var(--color-green1);
+}
+
+.green:hover article .feed-title {
+    color: var(--color-green1)
+}
+
+.yellow {
+    background-color: var(--color-yellow2);
+    border-top: 2px solid var(--color-yellow1);
+    box-shadow: 0px 0px 15px var(--color-yellow1);
+}
+
+.yellow .feed-text {
+    color: var(--color-yellow1);
+}
+
+.yellow .feed-title {
+    box-shadow: 0px 0px 5px var(--color-yellow1);
+}
+
+.yellow:hover {
+    background-color: var(--color-yellow1);
+}
+
+.yellow:hover article .feed-text {
+    background-color: var(--color-yellow1);
+}
+
+.yellow:hover article .feed-title {
+    color: var(--color-yellow1)
+}
+
+.violet {
+    background-color: var(--color-violet2);
+    border-top: 2px solid var(--color-violet1);
+    box-shadow: 0px 0px 15px var(--color-violet1);
+}
+
+.violet .feed-text {
+    color: var(--color-violet1);
+}
+
+.violet .feed-title {
+    box-shadow: 0px 0px 5px var(--color-violet1);
+}
+
+.violet:hover {
+    background-color: var(--color-violet1);
+}
+
+.violet:hover article .feed-text {
+    background-color: var(--color-violet1);
+}
+
+.violet:hover article .feed-title {
+    color: var(--color-violet1)
+}

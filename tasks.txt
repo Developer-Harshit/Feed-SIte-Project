@@ -1,0 +1,5 @@
+Initilizing Git
+    Making Git Repo
+    Adding a cloned branch
+Formatting Files
+Adding Node and Express.js
