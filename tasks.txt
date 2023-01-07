@@ -3,3 +3,17 @@ Initilizing Git ----Check
     Adding a cloned branch ---
 Formatting Files
 Adding Node and Express.js
+
+
+     <!-- *****Template Html*****
+                     <li class="feed-item">
+                    <article>
+                        <div class="feed-text">
+                            <p></p>
+                        </div>
+                        <div class="feed-title">
+                            <h3></h3>
+                        </div>
+                    </article>
+                </li>
+            -->

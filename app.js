@@ -10,12 +10,15 @@ app.set('views', templatePath)
 
 app.set('view engine', 'ejs')
 
-app.use(express.static('myImg'))
+const publicPath = path.join(__dirname, 'public')
+
+app.use(express.static(publicPath))
 
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/feed', function(req, res) {
-    res.send()
+    const filePath = path.join(__dirname, 'views', 'feeds.html')
+        // res.sendFile(filePath)
     res.render('feeds')
 })
 
