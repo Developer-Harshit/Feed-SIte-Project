@@ -15,6 +15,7 @@ app.use(express.static('myImg'))
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/feed', function(req, res) {
+    res.send()
     res.render('feeds')
 })
 
