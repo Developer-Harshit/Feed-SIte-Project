@@ -1,0 +1,27 @@
+{
+    "name": "feedssite",
+    "version": "1.0.0",
+    "description": "A site for creating and surfing feeds",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Developer-Harshit/Feed-SIte-Project.git"
+    },
+    "author": "Harshit",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Developer-Harshit/Feed-SIte-Project/issues"
+    },
+    "homepage": "https://github.com/Developer-Harshit/Feed-SIte-Project#readme",
+    "dependencies": {
+        "ejs": "^3.1.8",
+        "express": "^4.18.2",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}
