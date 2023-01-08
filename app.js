@@ -1,25 +1,23 @@
 const express = require('express')
+const path = require('path')
 
 const app = express()
 
-const path = require('path')
-
 const templatePath = path.join(__dirname, 'views')
-
-app.set('views', templatePath)
-
-app.set('view engine', 'ejs')
-
 const publicPath = path.join(__dirname, 'public')
 
-app.use(express.static(publicPath))
+app.set('views', templatePath)
+app.set('view engine', 'ejs')
 
+app.use(express.static(publicPath))
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/feed', function(req, res) {
-    const filePath = path.join(__dirname, 'views', 'feeds.html')
-        // res.sendFile(filePath)
+app.get('/', function(req, res) {
+    res.render('index')
+})
+
+app.get('/feeds', function(req, res) {
     res.render('feeds')
 })
 
-app.listen(2005)
+app.listen(2000)

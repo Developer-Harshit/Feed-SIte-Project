@@ -117,9 +117,10 @@ aside img {
     text-align: -webkit-right;
 }
 
-#a-nav:target .ham {
+
+/* #a-nav:target .ham {
     display: none;
-}
+} */
 
 #a-nav {
     position: fixed;
@@ -130,6 +131,7 @@ aside img {
     left: 0;
     display: none;
     background-color: #ecf4f0ed;
+    z-index: 1;
 }
 
 #a-nav ul {
@@ -150,6 +152,11 @@ aside .notSearch {
     flex-direction: row-reverse;
     gap: 1rem;
     align-items: center;
+}
+
+.notSearch p a {
+    text-decoration-line: none;
+    font-size: inherit;
 }
 
 #ham2 {

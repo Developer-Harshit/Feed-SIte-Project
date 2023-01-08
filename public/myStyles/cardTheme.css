@@ -1,8 +1,4 @@
 /* :root {
-     #blue
-    #green
-    #red
-    #yellow 
     --color-red1: rgb(234, 95, 116);
     --color-red2: rgba(239, 105, 118, 0.8);
     --color-blue1: rgb(110, 92, 229);
@@ -13,14 +9,9 @@
     --color-violet2: rgba(244, 110, 235, 0.8);
     --color-yellow1: rgb(233, 214, 93);
     --color-yellow2: rgba(247, 215, 111, 0.8);
-} 
-*/
+} */
 
 :root {
-    /* #blue
-    #green
-    #red
-    #yellow */
     --color-red1: rgb(234, 202, 95);
     --color-red2: rgba(239, 192, 105, 0.8);
     --color-blue1: rgb(227, 229, 92);

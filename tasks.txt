@@ -1,8 +1,8 @@
 Initilizing Git ----Check
     Making Git Repo ---
     Adding a cloned branch ---
-Formatting Files
-Adding Node and Express.js
+Formatting Files ---- Check
+Adding Node and Express.js ----Check
 
 
      <!-- *****Template Html*****
@@ -17,3 +17,8 @@ Adding Node and Express.js
                     </article>
                 </li>
             -->
+
+Making mobile nav respo ----Checks
+Creating basic index page
+Creating basic post and confirm page
+Making routes of the above created page

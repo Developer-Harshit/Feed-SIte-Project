@@ -1,11 +1,20 @@
 function ham1Disable() {
     ham1Element.style.display = 'none'
     ham2Element.style.display = 'flex'
+    asideElement.style.display = 'initial'
 }
 
 function ham2Disable() {
     ham2Element.style.display = 'none'
     ham1Element.style.display = 'flex'
+    asideElement.style.display = 'none'
+
+}
+
+function asideDisable() {
+    ham2Element.style.display = 'none'
+    ham1Element.style.display = 'flex'
+    asideElement.style.display = 'none'
 }
 
 // function hamDisable(event) {
