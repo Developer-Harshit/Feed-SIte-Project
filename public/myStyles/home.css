@@ -16,24 +16,23 @@ body {
 
 /* header styles */
 
-header {
-    background-color: rgb(251, 255, 253);
-    width: 100%;
-}
-
 nav img,
 aside img {
     width: 2rem;
+    height: 2rem;
 }
 
 
 /* header styles */
 
 header {
-    justify-content: space-between;
-    display: flex;
+    background-color: rgb(251, 255, 253);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 header img,
@@ -85,6 +84,29 @@ aside .notSearch {
 
 .search a {
     display: none;
+}
+
+nav {
+    justify-self: self-end;
+}
+
+header div {
+    justify-self: self-start;
+}
+
+header div.notSearch {
+    z-index: 1;
+    justify-self: initial;
+}
+
+header div.notSearch img {
+    margin: 0.5rem;
+    margin-bottom: -40px;
+    padding: 5px;
+    background-color: #fbfffd;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
 }
 
 .basic-nav img,

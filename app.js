@@ -20,4 +20,9 @@ app.get('/feeds', function(req, res) {
     res.render('feeds')
 })
 
+app.get('/post', function(req, res) {
+    res.render('post')
+})
+
+
 app.listen(2000)

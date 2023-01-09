@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/meta.ejs')%>
+        <link rel="stylesheet" href="/myStyles/form.css">
+</head>
+
+<%- include('includes/header.ejs')%>
+
+    <body>
+        <main>
+            <section class="section" id="post">
+                <div>
+                    <h2>Post</h2>
+                    <form action="" method="post">
+                        <ul>
+                            <li>
+                                <label for="title">Give a nice title</label>
+                                <input type="text" id="title" name="title" required>
+                            </li>
+                            <li> <label for="contant">Write the article</label>
+                                <textarea rows="5" id="contant" name="contant" required></textarea>
+                            </li>
+                            <li>
+                                <label for="image">Add image</label>
+                                <input type="file" accept="image/*" multiple id="image" name="image">
+                            </li>
+                        </ul>
+                        <button>Submit</button>
+                        <button>Cancel</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <%- include('includes/footer.ejs')%>
+    </body>
+
+</html>
