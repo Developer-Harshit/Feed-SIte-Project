@@ -1,7 +1,9 @@
 Initilizing Git ----Check
     Making Git Repo ---
     Adding a cloned branch ---
+
 Formatting Files ---- Check
+
 Adding Node and Express.js ----Check
 
 
@@ -19,6 +21,18 @@ Adding Node and Express.js ----Check
             -->
 
 Making mobile nav respo ----Checks
+
 Creating basic index page
+    adding basic structure
+    styling the page
+    adding animations
+
 Creating basic post and confirm page
-Making routes of the above created page
+    adding basic structure
+    styling the page
+    config it to make it functional
+
+Making routes of the above created page ---- Check
+
+Posting and Showing Feeds
+
