@@ -69,7 +69,7 @@ app.get('/confirm', function(req, res) {
 app.post('/post', function(req, res) {
     const article = req.body
     article.id = uuid.v4()
-
+    
     const storedArticles = accessData()
 
     storedArticles.push(article)
