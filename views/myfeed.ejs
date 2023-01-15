@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/meta.ejs')%>
+</head>
+
+<%- include('includes/header.ejs')%>
+
+    <body>
+        <main>
+            <section class="section" id="pick">
+                <article style="color: antiquewhite;">
+                    <h2>
+                        <%= myArticle.title  %> <br> idk 
+                    </h2>
+                    <p>
+                        <% for(line of article.contant) { %>
+                            <%= line %>
+                            <br>
+                        <% } %>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <%- include('includes/footer.ejs')%>
+    </body>
+
+</html>

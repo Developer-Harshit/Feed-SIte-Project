@@ -7,7 +7,6 @@ function addFeeds() {
 
     randomNum = Math.floor(Math.random() * 12)
     const feedText = textArray[randomNum]
-    newList.classList.add('feedSize' + randomNum)
 
     randomNum = Math.floor(Math.random() * 3)
     const feedTitle = titleArray[randomNum]
@@ -27,6 +26,8 @@ function feedColor() {
     for (let feedItem of feedItems) {
         console.log('bye')
         feedItem.classList.add(colorList[colorNum])
+        feedItem.classList.add('feedSize' + randomNum)
+        randomNum = Math.floor(Math.random() * 12)
         colorNum++
         if (colorNum === 5) {
             colorNum = 0

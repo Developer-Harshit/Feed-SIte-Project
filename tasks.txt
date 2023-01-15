@@ -36,3 +36,10 @@ Making routes of the above created page ---- Check
 
 Posting and Showing Feeds
 
+
+
+<% for(line of article.contant) { %>
+                            <%= line %>
+                            <br>
+                        <% } %>
+

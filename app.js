@@ -9,6 +9,18 @@ const templatePath = path.join(__dirname, 'views')
 const publicPath = path.join(__dirname, 'public')
 const dataPath = path.join(__dirname, 'data', 'articles.json')
 
+function addLineBreak(article){
+    let myContant = article.contant
+    myContant = myContant.split('\r\n')
+    article.contant = myContant
+}
+
+function accessData(){
+    const fileData = fs.readFileSync(dataPath)
+    const storedArticles = JSON.parse(fileData)
+    return storedArticles
+}
+
 app.set('views', templatePath)
 app.set('view engine', 'ejs')
 
@@ -20,7 +32,32 @@ app.get('/', function(req, res) {
 })
 
 app.get('/feeds', function(req, res) {
-    res.render('feeds')
+
+    const storedArticles = accessData()
+
+    res.render('feeds',{articles : storedArticles,addLine : addLineBreak})
+})
+
+
+
+
+app.get('/feeds/:id',function(req,res){
+    const myId = req.params.id
+
+    const storedArticles = accessData()
+
+    
+    for(article of storedArticles){
+        if(myId == article.id){
+            const accessById = article
+            console.log(accessById)
+            addLineBreak(accessById)
+            res.render('myfeed.ejs',{myArticle: accessById})
+            break
+        }
+    }
+    res.render('feeds.ejs')
+
 })
 
 app.get('/post', function(req, res) {
@@ -33,8 +70,7 @@ app.post('/post', function(req, res) {
     const article = req.body
     article.id = uuid.v4()
 
-    const fileData = fs.readFileSync(dataPath)
-    const storedArticles = JSON.parse(fileData)
+    const storedArticles = accessData()
 
     storedArticles.push(article)
 
