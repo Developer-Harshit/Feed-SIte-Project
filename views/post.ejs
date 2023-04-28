@@ -20,7 +20,7 @@
                                 <input type="text" id="title" name="title" required>
                             </li>
                             <li> <label for="contant">Write the article</label>
-                                <textarea rows="5" id="contant" name="contant" required></textarea>
+                                <textarea rows="5" id="contant" name="contant" minlength="150" required></textarea>
                             </li>
                             <li>
                                 <label for="image">Add image</label>
@@ -31,7 +31,7 @@
                         <button>Cancel</button>
                     </form>
                 </div>
-            </section>
+            </section>            
         </main>
         <%- include('includes/footer.ejs')%>
     </body>

@@ -1,11 +1,13 @@
 main {
     max-width: 40rem;
+    margin: auto;
+    margin: 3rem auto;
 }
 
 form {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(21, 20, 20, 0.2);
     padding: 1rem;
-    background-color: rgb(216, 190, 133);
+    background-color:#ecf89b;
     text-align: left;
 }
 
@@ -21,7 +23,7 @@ textarea {
 }
 
 label {
-    color: rgb(80, 57, 7);
+    color: rgb(67, 77, 11);
     margin-bottom: 0.25rem;
 }
 
@@ -30,26 +32,28 @@ textarea {
     font: inherit;
     padding: 0.25rem;
     border-radius: 4px;
-    background-color: rgb(252, 248, 239);
-    border: 1px solid rgb(121, 85, 7);
-    color: rgb(121, 85, 7);
+    background-color: #f4ffaf;
+    border: 1px solid  #cde04f;
+    color: #767619;
+        
     box-sizing: border-box;
 }
 
 input:focus,
 textarea:focus {
-    background-color: rgb(252, 234, 197);
+    background-color:  #efff83;
+    
 }
 
 button {
     cursor: pointer;
     padding: 0.5rem 1.5rem;
-    background-color: rgb(189, 130, 41);
+    background-color: #b1c733;
     border-radius: 4px;
     color: white;
-    border: 1px solid rgb(202, 158, 62);
+    border: 1px solid  #d6e578;
 }
 
 button:hover {
-    background-color: rgb(202, 141, 62);
+    background-color:#cbde5e;
 }

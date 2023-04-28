@@ -11,7 +11,7 @@
 #feed-wrapper {
     margin: 4%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 10rem 10rem;
     gap: 2rem;
     grid-auto-flow: row dense;
