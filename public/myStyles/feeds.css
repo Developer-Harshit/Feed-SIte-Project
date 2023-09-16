@@ -38,8 +38,8 @@
 }
 
 .feedSize0 {
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .feedSize1 {
@@ -78,26 +78,26 @@
 }
 
 .feedSize8 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
 }
 
 .feedSize9 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
 }
 
 .feedSize10 {
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .feedSize11 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
 }
 
 .feedSize12 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
 }
